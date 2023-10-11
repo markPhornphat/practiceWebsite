@@ -1,0 +1,152 @@
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 45px;
+  column-gap: 16px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width:
+999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnail-row {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr; 
+}
+
+.c-thumbnail,
+.detail {
+  vertical-align: top;
+}
+
+.video-title {
+  width: 250px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.hyperlink {
+  text-decoration: none;
+  color: black;
+}
+
+.video-author {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.video-info{
+  font-size: 12px;
+}
+
+.channel-thumbnail {
+  margin-right: 6px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 100px;
+  display: inline-block;
+  position: relative;
+}
+
+.c-container {
+  display: inline-block;
+  position: relative;
+}
+
+.video-time {
+  font-family: Roboto,Arial;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 4px;
+}
+
+.tooltip-flex {
+  position: absolute;
+  display: flex;
+  width: 220px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+
+  top: 55px;
+  pointer-events: none;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 1px 0px 8.85px rgba(0, 0, 0, 0.514);
+  border-style: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.c-container:hover .tooltip-flex{
+  opacity: 1;
+}
+
+.tooltip-c-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  margin-right: 5px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+
+  justify-content: space-around;
+}
+
+.c-name {
+  font-family: Roboto, Arial;
+  font-weight: bold;
+}
+
+.c-detail{
+  font-family: Roboto, Arial;
+  font-size: 13px;
+}
